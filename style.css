@@ -2,6 +2,7 @@
     --primary-color: #121212;
     --secondary-color: #282828;
     --text-color: #f0f0f0;
+    --secondary-text-color: black;
 }
 
 * {
@@ -50,7 +51,12 @@ body {
 }
 
 #dateSelection {
-    color: black;
+    color: var(--secondary-text-color);
+}
+
+.dateSelectionButton {
+    color: var(--secondary-text-color);
+    margin-top: 1REM;
 }
 
 .navItem {
