@@ -3,7 +3,6 @@ const navSetup = () => {
 }
 
 const screenSelect = (screenName) => {
-    console.log(screenName);
     const screens = document.getElementsByClassName('screen');
     for (screen of screens) {
         screen.classList.add('hidden');
@@ -26,7 +25,12 @@ const todaysDate = () => {
             dateInput.value = formattedDate;
         }
     });    
+}
 
+const workoutPage = () => {
+    const workoutDate = document.querySelector('#dateSelection').value;
+    console.log(workoutDate);
+    screenSelect('selectionPage');
 }
 
 
