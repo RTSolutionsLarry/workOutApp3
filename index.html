@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkoutApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="appContainer">
+        <div class="screenContainer">
+            <div class="screen historyScreen hidden">
+                <h1>Workout History</h1>
+            </div>
+            <div class="screen workoutScreen hidden">
+                <div class="dateSelectionContainer">
+                    <label for="dateSelection">Workout Date</label>
+                    <input type="date" id="dateSelection">
+                </div>
+            </div>
+            <div class="screen bodyMapScreen hidden">
+                <h1>Body Map</h1>
+            </div>
+        </div>
+        <div class="navigationContainer">
+            <ul class="navItemContainer">
+                <li class="navItem" id="historyScreen" onclick="screenSelect('historyScreen')">History</li>
+                <li class="navItem" id="workoutScreen" onclick="screenSelect('workoutScreen')">Workout</li>
+                <li class="navItem" id="bodyMapScreen" onclick="screenSelect('bodyMapScreen')">Body Map</li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
